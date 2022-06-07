@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>My Coding Journey: Day 1</title>
+</head>
+<body> 
+    <h1>Jumping into HTML!</h1>
+    <h2>Monday June 6th, 2022. Day one of coding.</h2>
+
+    <p>I am now on my fourth day of Odin Project and I am finally starting the HTML basics. Very basic!
+        I thought the best way to put my knowledge to the test and use everything I learn was to create a little journal site. 
+        It should be a fun way to display my knowledge and commit new skills to memory.
+        So let's do it! 
+        (It will be neat to see the look of this "site" evolve, especially as we learn some CSS to class the place up)
+    </p>
+    <p> Using multiple paragraph tags will split up the text nicely! And they do not need to be numbered, oops.</p>
+    <p> We can also make <strong>Bold text</strong> using the "strong" tags.</p>
+    <p> For cute <em>Italic text</em>, we can use the "em" tags. Let's try <strong><em>using them together!</em></strong></p>
+    <p> All of these paragraphs I am putting together are considered <em>nesting</em> because they are sharing the same <strong>body</strong>. 
+        In other words, they share a <em>parent</em> within the same <strong>body</strong> tags, they are the <em>children</em>.
+    The <strong>paragraph</strong> tags are considered <em>siblings</em>.</p>
+        
+        <!-- A Hidden Comment for my future self can go here-->
+
+    <h3><strong>Now for Lists!</strong> <em>Unordered + Ordered.</em></h3>
+    <h4>List #1, <em>Unordered:</em></h4>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p> Here we used the <strong>ul</strong> <em>parent</em> tags with the <strong>li</strong> tags nestled inside.</p>
+    <h4> List #2, <em>Ordered:</em></h4>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <p>Here we instead used the <strong>ol</strong> <em>parent</em> tags with the <strong>li</strong> tags nestled inside. </p>
+
+    <h3>Links and Images</h3>
+    <h4>Links:</h4>
+    <p> Using the <strong>a (anchor)</strong> tags, along with 'href="a url to link here"'(<em>Fun Fact: href stands for hypertext reference</em>). Let's try a link to <a href="https://www.theodinproject.com">The Odin Project</a> now.</p>
+    <p>There are two different types of URLs to link. 
+        The first, <strong>Absolute Links</strong>, link to pages on other websites. They must contain the protocol like in the link used above(example: https) 
+        The second, <strong>Relative Links</strong>, link to pages within our website. They do not include a protocol, they include the file path to the other page relative to the one created.
+        We can also use the "anchor" tags for more than URLs. They can also linke to videos, pdfs, images, etc.</p>
+        <p> Now let's try linking to tomorrow's page; <a href="day002.html">My Coding Journey: Day 2</a></p>
+        <h4>Images:</h4>
+        <p>Using the <strong>img (image)</strong> tags, along with 'src="url to image here"'. (Note: images don't need a closing tag)</p>
+        <p> Let's put an image from our Image folder here:</p>
+        <center><img src="images/secure-coding.png"></center>
+        <p>It is also helpful to add a text alternative to an image. It is useful for if an image can't load, it will show a description instead. To do this, add an "alt" attribute after the src path.</p>
+        <p> Ex) [img src="broken.jpg" alt="(The image won't appear, but this text will.)"]</p>
+        <center><img src="broken.jpg" alt="(The image won't appear, but this text will.)"></center>
+    
+        <h3> Commit Messages</h3>
+        <p> Commit messages are notes only seen in the code. They are beneficial when working alone on a project or with a group.
+            They will only been seen in code and are a good reminder of where you left off, when you change something or for any reason that a note would be helpful for your future self or team members working on the same project to communicate changes and/or plans.</p>
+            <p> Think of commit messages like a "snapshot" of your code at the moment the commit was made.</p>
+            <p>It is considers best practice to commit every time you have a meaningful change in the code. This creates a timeline of progress.</p>
+            <h4>Some examples of when to make a commit:</h2>
+            <ul> 
+                <li>Fixing a typo</li>
+                <li>Fixing a bug</li>
+                <li>When working on making a function work the way you want it to</li>
+                <li>When you get that function to work!</li>
+                <li>To give context to a change to fellow developers, or to your future self</li>
+            </ul>
+
+            <p> A well formed dedication to commit messages will ensure a site or project will be easier to maintain for extended periods of time.</p>
+
+            <h4>The Seven Rules of a great Git commit message:</h4>
+            <ol>
+                <li>Separate subject from body with a blank like</li>
+                <li>Limit the subject like to 50 characters</li>
+                <li>Capitalize the subject line</li>
+                <li>Do not end the subject line with a period</li>
+                <li>Use the imperative mood in the subject line</li>
+                <li>Wrap the body at 72 characters</li>
+                <li>Use the body to explain <em>what</em> and <em>why</em> vs. <em>how</em></li>
+            </ol>
+
+            <p> Lastly, the commit message will be written in the command line of shell. Ex) git commit -m "Add my first commit"</p>
+            <p>A properly formed Git commit subject line should always be able to complete the following sentence:</p>
+            <ul>
+                <li>If applied, this commit will <em>your subject line here</em></li>
+                <ul>
+                    <li>If applied, this commit will <strong>Add my first commit</strong></li>
+                    </ul>
+            </ul>
+                    
+        
+        <center><p><a href="index.html"><strong>Return to Index</strong></a>  |  <a href="day002.html"><strong>Day 2</strong></a></p></center>
+    </body>
+</html>
