@@ -28,10 +28,71 @@
         <h3>Now let's put our Git and GitHub skills to the test ...</h3>
         <p>Today, I'll be working on my iteration of the <a href="../odin-recipes/index.html">The Odin Project: Recipes site</a>, let's see how it turns out.</p>
 
+        <h2>CSS time, let's get stylish ...</h2>
+        <p><strong>Selectors:</strong> are HTML elements that follow the same rules as CSS, they are what is being <em>selected</em> for each rule.</p>
+        <p><strong>The Most Common Selectors:</strong></p>
+        <ul>
+            <li>Universal Selectors</li>
+            <ul>
+                <li>Universally selects an element of any type and add the selector to it, example:</li>
+                <p>* { </p>
+                    <p> color: purple; </p>
+                        <p> } </p>
+                            <p>All <font color="purple">*</font>s would be colored purple (Note. all '|' signify an enter/line down)</p>  
+            </ul>
+            <li>Type Selectors (or Element Selectors)</li>
+            <ul>
+                <li>Selects all elements of the same type, example:</li>
+                <p> div { </p>
+                    <p> color: white; </p>
+                        <p>} </p>
+                            <p>All '<em>div</em>' elements will appear white</p>
+            </ul>
+            <li>Class Selectors</li>
+            <ul>
+                <il>Selects all elements with the given class, it is an attribute that can be added to HTML, example:</il>
+                <p>.example { 
+                    <p>color: red; </p>
+                        <p>} </p>
+                            <p>All specified code will appear in red if '<em>class="example"</em>' is in the element (Note. multiple classes can be added to one Attribute)</p>
+            </ul>
+            <li>ID Selectors</li>
+            <ul>
+                <li>Selects all elements with the given id, similar to Class Selectors, it is an attribute added to HTML. Unlike Class, an element can only have one ID (Note. it should be used sparingly), example:</li>
+                <p>#example { </p>
+                    <p>background-color: red; </p>
+                        <p> } </p>
+                            <p>All specified code will appear with a black background if '<em>id="example</em>' is in the element, example:</p>
+            </ul>
+            <li>Grouping Selectors</li>
+            <ul>
+                <li>Allows multiple selectors to be used together if they share the same declarations using a comma, example:</li>
+                <p>.example-one, </p>
+                    <p> .example-two { </p>
+                        <p> color: white; </p>
+                            <p> } 
+                                <p>It cuts down on repetition, each example can still have more declarations in  another selector, but this way repetition only needs to be written once</p>
+            </ul>
+            <li>Chaining Selectors</li>
+            <ul>
+                <li>Allows selectors to be chained as a list, example:</li>
+                <p>.example-one.example-two {  <em>OR</em>   .example-one#example-two {</p>
+                    <p>color: red;</p>
+                    <p> {</p>
+                        <p>These selectors must share the same element type, like '<em>div</em>' or '<em>p</em>'</p>
+            </ul>
+        </ul>
+        <h3>CSS Properties to start with:</h3>
+        <ul>
+            <li>color: <font color="orange">sets an element's text color, ex) #1100ff; rgb(100, 0, 127); hsl(15, 82%, 56%);</font></li>
+            <li>background-color: <font color="orange">sets an element's background color, similar to text</font></li>
+            <li>font-family: <font color="orange">sets an element's font, ex) "Times New Roman", sans-serif; (multiple should be listed)</font></li>
+            <li>font-size: <font color="orange">sets an element's font size, ex) 22px;</font></li>
+            <li>font-weight: <font color="orange">sets an element's boldness of text, ex) bold; 700;</font></li>
+            <li>text-align: <font color="orange">sets an element's horizontal alignment, ex) center;</font></li>            
+        </ul>
 
-
-
-
+       
 
 
         <center><p><a href="day001.html"><strong>Day 1</strong></a>  |  <a href="index.html"><strong>Return to Index</strong></a>  |  <a href="day003.html"><strong>Day 3</strong></a></p></center>
