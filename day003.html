@@ -2,31 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-
-
-
-
-
+    <link rel="stylesheet" href="style003.css">
     <title>My Coding Journey: Day 3</title>
 </head>
 <body>
     <h1>More CSS Basics! It's stylin' time.</h1>
-    <h2>Wednesday June 8th, 2022. Day three of coding.</h2>
+    <hr>
+    <h3>Wednesday June 8th, 2022. <br>Day three of coding.</h3>
     <p>It is finally time to get to the exciting part of web design, implimenting CSS into HTML.    </p>
     <p> <strong>External CSS</strong> (the most commonly used method) is created in a separate file and is added within the '<em>head</em>' tags of the HTML, it uses a self-closing '<em>link</em>' tag. This method is good when a website has many pages that share the same style.</p>
     <p><strong>Internal CSS (or embedded CSS)</strong> is created within the HTML file itself within the '<em>head</em>' tags, they use opening and closing '<em>style</em>' tags. This method is useful a page that will have a different style (Note, depending on the amount of rules and declarations, this will make the HTML quite large).</p>
     <p><strong>Inline CSS</strong> is used to add styles directly to HMTL elements using the '<em>style="attribute: value;"</em>'. This method is not recommended often because it could get a bit messy by bloating the HTML. You also run the risk of CSS overrifing it.</p>
 
 
+    <h2>CSS Foundations</h2>
+    <p>I'm going to add an external CSS stylesheet to this page and play around with it, eventually we'll make a nicer looking one to the index and future pages. 
+    <br>To add, we're going to include <em>[link rel="stylesheet href="style003.css"]</em></p>
+        <br>
 
+<div id="fun">
+    <p>To see what I've learned today, check out the css code! It was mostly behind-the-scenes</p>
+         <p>Like how to resize an image:</p>
+            <img class="resize" src="images/llama.jpg" alt="llama">
+        <div class="box">
+            <p>Or how to add a fun box! <br>
+            And to use <br>
+                '<em>br</em>'<br>   
+                To add space between text</p>
+            </div>   
+            <p>and how to add a hover effect to links:</p>    
+        </div>
+       
 
-
-
-
-
-
-    <center><p><a href="day002.html"><strong>Day 2</strong></a>  |  <a href="index.html"><strong>Return to Index</strong></a>  |  <a href="day004.html"><strong>Day 4</strong></a></p></center>
+    <div class="centered">
+        <a href="day002.html">Day 2</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day004.html">Day 4</a>
+    </div>
   
 </body>
 </html>
