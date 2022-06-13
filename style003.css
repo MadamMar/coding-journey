@@ -48,15 +48,6 @@ a {
     padding: 5px;
 }
 
-.centered {
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-}
-
-
 a:hover {
     border: 2px solid transparent;
     border-radius: 5px;
