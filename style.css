@@ -1,8 +1,46 @@
-div {
-    color: white;
-    background-color: black;
+body {
+    background-color: rgb(248, 231, 134);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-p {
-    color: black;
+h3 {
+    text-align: right;
+}
+
+h1 {
+    text-align: center;
+}
+
+special-text {
+    color: rgb(180, 50, 72);
+    text-decoration: underline;
+}
+
+.simple-box {
+    width: 350px;
+    height: 100px;
+    margin: 10px;
+    padding: 25px;
+    border: 5px solid black;
+    align-items: center;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.centered {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+}
+
+
+a:hover {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: lightgoldenrodyellow;
+    background-color: rgb(116, 119, 102);
+    text-decoration: none;
 }
