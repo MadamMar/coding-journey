@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        li,
+        ul {
+            border: 35px solid lightpink;
+            padding: 5px;
+            display: flex;
+            list-style: none;
+        }
+        .block {
+            display: block;
+            border: 2px solid lightgreen;
+            padding: .5em;
+            padding: 2px;
+            width: 100px;
+        }
+
+        .inline {
+            display: inline;
+            height: auto;
+        }
+
+        .inlineflex {
+            display: inline-flex;
+            list-style: none;
+            padding: 10px;
+            border: .5em solid blanchedalmond;
+        }
+
+        span {
+            border: 2px solid lightpink
+        }
+
+        .basicbox {
+            box-sizing: border-box;
+            border: 2px solid lightcoral;
+        }
+    </style>
+    <title>My Coding Journey: Day 6</title>
+</head>
+
+<body>
+    <h1>More CSS Positioning and Layout</h1> 
+    <hr>
+    <h3>Tuesday June 14th 2022 <br> Day Six</h3>
+    <h2>Different Display Types</h2>
+    <p>Let's play with <special-text>flex</special-text> display types using a list with '<em>style</em>' in our '<em>head</em>' tags (would appear more appealing with a <em>transparent</em> border);</p>
+    <ul>
+        <li>This will be space one</li>
+        <li>This will be space two</li>
+        <li>This will be space three</li>
+        <li>This will be space four</li>
+    </ul>
+
+    <p>And now for a <special-text>block</special-text> display within a sentence <span class="block">right here</span> using '<em>span</em>' tags.</p>
+    <br> <br>
+    <p>Now let's use some <special-text>inline</special-text> elements</p>
+    <p class="inline">This paragraph will be inline with the next</p>
+    <p class="inline">This is the next paragraph</p>
+    <p>We can also add words on the same line using the <span>span element</span>. (This is done by wrapping the desired text in '<em>span</em>' tags)</p>
+    <ul class="inlineflex">
+        <li class="inlineflex">You can also inline using lists</li>
+        <li class="inlineflex">With multiple items</li>
+    </ul>
+    <p class="inline"> With a paragraph appearing right next to it</p>
+    <p>The style on this page is incredibly messy, but it is all working! It has given me a chance to experience the Selector hierarchy (or CSS Specificity to be exact)
+        <br> Put simply, inline display is a good way to make more use of the space in a webpage, allowing multiple elements to share a line</p>
+
+    <h2>An Alternative CSS Box Model</h2>
+    <p>You can make a more simplified, basic box using the '<em>box-sizing:</em>' element alternative.</p>
+    <div class="simple-box basicbox">Example of a basic box using '<em>box-sizing: border-box;'</em></div>
+    <p>We borrowed from the style.css for the simple box, then adding the box-sizing element within this page's style, it automatically adjusted the box for us to fit the content.</p>
+
+
+    <h2>Margins, in Depth</h2>
+    <p>We can get more specific with margin values using:
+    <em><br><br>margin-top<br>margin-right<br>margin-bottom<br>margin-left</em></p>
+    
+    <h2>Borders, in Depth</h2>
+    <p>Similar to Margins, you can set specific values for the borders using:</p>
+    <ul class="flexlist">
+        <li class="flexlist"><strong>Individual Values - </strong></li>
+        <li class="flexlist"><em>border-top<br>border-right<br>border-bottom<br>border-left</em></li>
+        <li class="flexlist"><strong>Values for all sides - </strong></li>
+        <li class="flexlist"><em>border-width<br>border-style<br>border-color</em></li>
+    </ul>
+    <p>Or more specific combinations:</p>
+    <ul class="flexlist">
+        <li class="flexlist"><strong>Border Width - </strong></li>           
+        <li class="flexlist"><em>border-top-width<br>border-right-width<br>border-bottom-width<br>border-left-width</em></li>
+        <li class="flexlist"><strong>Border Style - </strong></li>
+        <li class="flexlist"><em>border-top-style<br>border-right-style<br>border-bottom-style<br>border-left-style</em></li>
+        <li class="flexlist"><strong>Border Color - </strong></li>
+        <li class="flexlist"><em>border-top-color<br>border-right-color<br>border-bottom-color<br>border-left-color</em></li>
+    </ul>
+
+    <h2>Padding, in Depth</h2>
+    <p>Lastly, padding, which works the same way as margins:
+    <em><br><br>padding-top<br>padding-right<br>padding-bottom<br>padding-left</em></p>
+    <p> We'll play around with these much more in the future</p>
+
+
+
+
+    <div class="centered">
+        <a href="day005.html">Day 5</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day007.html">Day 7</a>
+    </div>
+</body>
+
