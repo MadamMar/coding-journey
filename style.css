@@ -35,6 +35,13 @@ special-text {
     transform: translate(-50%, -50%);
 }
 
+.flexlist {
+    display: inline-flex;
+    list-style: none;
+    padding: 2px;
+    border: 2px solid transparent;
+    align-items: center;
+}
 
 a:hover {
     border: 2px solid transparent;
