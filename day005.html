@@ -33,6 +33,32 @@
         <p>For this box, the text is the content. We'll make the border black, the padding light yellow. The margin can only be the invisible space that surrounds the box.</p>
     </div>
 
+    <p>There are two types of boxes in CSS: <special-text>block boxes</special-text> and <special-text>inline boxes</special-text>. They can be added to the CSS using "<em>display: border-box;</em>"" or "<em>display: inline-box"</em>. 
+    These boxes are considered <em>Outer Display types</em></p>
+    <p><special-text><strong>Block boxes</strong></special-text> will cause the box to:
+    <br>(Some HTML elements that use block by default are <em>h1</em> and <em>p</em></p>
+        <ul>
+            <li>Break onto a new line </li>
+            <li>Extend in the inline direction to fill the spaces available in its container </li>
+            <li>Follow the width and height properties</li>
+            <li>Push other elements away based on the padding, margin, and border</li>
+        </ul>
+
+    <p><special-text><strong>Inline boxes</strong></special-text> will cause the box to:
+    <br>(Some HTML elements that use inline by default are <em>a</em>, <em>span</em>, <em>em</em>, and <em>strong</em>)</p>
+    <ul>
+        <li>Doesn't break onto a new line</li>
+        <li>Does not follow width and height properties</li>
+        <li>Vertically it <strong>will not</strong> cause other inline boxes to move away from the box (padding, margins and border still apply)</li>
+        <li>Horizontally it <strong>will</strong> cause other inline boxes to move away from the box</li>
+    </ul>
+
+    <p>Now for <em>Inner Display types</em>. These control what happens on the inside of the box, to the elements/contents. By default, elements are laid out in <special-text>normal flow</special-text>. 
+    <br>A common <em>Inner Display</em> used is <special-text>flex</special-text> and <special-text>grid</special-text>. These are also added using '<em>display:</em>' attribute.
+
+<br><br> To be continued tomorrow!</p> 
+
+
 
 
 
