@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .list {
+            display: flex;
+            list-style: none;
+            padding: 0px 25px;
+            border: 0px solid transparent;
+            text-align: center;
+            color: lightcoral;
+            font-style: italic;
+        }
+    </style>
+    <title>My Coding Journey: Day 7</title>
+</head>
+<body>
+    <h1>CSS Block and Inline</h1>
+    <hr>
+    <h3>Wednesday June 15th, 2022<br>Day Seven</h3>
+
+    <h2>Block vs Inline</h2>
+    <p><strong>Block (display: block)</strong> appears on a page stacked on top of each other, each starting a new line, like lists that appear in separate lines independently. 
+        <br><strong>Block-level Elements:</strong>
+    <ul class="list">
+    <li class="list">address<br>article<br>aside<br>blockquote<br>canvas<br>dd</li>
+    <li class="list">div<br>dl<br>dt<br>fieldset<br>figcaption<br>figure</li>
+    <li class="list">footer<br>form<br>h1-h6<br>header<br>hr<br>li</li>
+    <li class="list">main<br>nav<br>noscript<br>ol<br>p<br>pre</li>
+    <li class="list">section<br>table<br>tfoot<br>ul<br>video</li>
+    </ul></p>
+
+    <p><strong>Inline (display: inline)</strong> do not start a new line, they appear in the same line as whatever element it is placed beside, like links appearing in the same line as the text they are placed with.
+        <br><strong>Inline-level Elements:</strong>
+    <ul class="list">
+        <li class="list">a<br>abbr<br>acronym<br>b<br>bdo<br>big</li>
+        <li class="list">br<br>button<br>cite<br>code<br>dfn<br>em</li>
+        <li class="list">i<br>img<br>input<br>kdb<br>label<br>map</li>
+        <li class="list">object<br>output<br>q<br>samp<br>script<br>select</li>
+        <li class="list">small<br>span<br>strong<br>sub<br>sup<br>textarea</li>
+        <li class="list">time<br>tt<br>var</li>
+    </ul></p>
+    <p><strong>Inline-Block (display:inline-block)</strong> mixes characteristics of both. They are like inline elements but use block like padding and margin. In most cases that need to line up boxes, Flexbox is generally a better option.</p>
+
+
+
+    <h2>Divs and Spans</h2>
+    <p><strong>Div</strong> elements are block-level and are used like a container to group other elements together. They are useful to block different sections of a page and style them.</p>
+    <p><strong>Span</strong> elements are inline-level and is used to group text content and inline HTML elements for styling. It is useful when styling within one element and no other semantic HTML element is appropriate.</p>
+
+
+    <div class="centered">
+        <a href="day006.html">Day 6</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day008.html">Day 8</a>
+    </div>
+</body>
+</html>

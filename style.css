@@ -11,7 +11,7 @@ h1 {
     text-align: center;
 }
 
-special-text {
+.special-text {
     color: rgb(180, 50, 72);
     text-decoration: underline;
 }
@@ -49,4 +49,5 @@ a:hover {
     color: lightgoldenrodyellow;
     background-color: rgb(116, 119, 102);
     text-decoration: none;
+    margin: 0 auto;
 }
