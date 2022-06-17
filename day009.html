@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>My Coding Journey: Day 9</title>
+    <style>
+        .first-container {
+            height: 100px;
+            padding: 16px;
+            background: paleturquoise;
+            border: 4px solid dodgerblue;
+            display: flex;            
+        }
+
+        .second-container {
+            height: 100px;
+            padding: 16px;
+            background: paleturquoise;
+            border: 4px solid dodgerblue;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .third-container {
+            height: 100px;
+            padding: 16px;
+            background: paleturquoise;
+            border: 4px solid dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .fourth-container {
+            height: 200px;
+            padding: 16px;
+            background: paleturquoise;
+            border: 4px solid dodgerblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+                
+        .fifth-container {
+            height: 100px;
+            padding: 16px;
+            background: paleturquoise;
+            border: 4px solid dodgerblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .first {
+            width: 75px;
+            height: 60px;
+            border: 4px solid dodgerblue;
+            background: palegoldenrod;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1><hr>
+    <h3>Friday June 17th, 2022<br>Day Nine</h3>
+
+    <h2>Alignment</h2>
+    <p>Flex can be very useful in arranging items that require a specific size. We can do this by not including a specified <span class="special-text">flex: ___</span> value, which would cause all of the space within the container to be filled evenly.
+    <br>Here is an example of the items not having a Flex value:</p>
+    <div class="first-container">
+        <div class="first">These boxes</div>
+        <div class="first">will align</div>
+        <div class="first">to the 'front'</div>
+    </div>
+
+    <p>Now we can add space between them using <span="special-text">justify-content: space-between</span> to the container:</p>
+    <div class="second-container">
+        <div class="first">Now they're</div>
+        <div class="first">spaced apart</div>
+        <div class="first">equally</div>
+    </div>
+
+    <p><span class="special-text">justify-content</span> aligns items across the main axis. We can also (switch <span class="special-text">justify-cotent: center;</span> and) add in an <span class="special-text">align-items: center;</span> to get change the items on the cross axis:</p>
+    <div class="third-container">
+        <div class="first">Now they're</div>
+        <div class="first">double centered</div>
+        <div class="first">Vertical + Horizontal</div>
+        </div>
+
+    <p>We can also flip it all sideways using the <span class="special-text">flex-direction: column</span>:</p>
+    <div class="fourth-container">
+        <div class="first">Now they're</div>
+        <div class="first">centered</div>
+        <div class="first">Horizontal + Vertical!</div>
+        </div>
+
+    <h2>Gap</h2>
+    <p>The <span class="special-text">gap:</span> properity will add a symmetrical gap between the flex items. Let's add a small gap to a new container using the third example's blueprint:</p>
+    <div class="fifth-container">
+        <div class="first">Now they're</div>
+        <div class="first">split up</div>
+        <div class="first">by 8 pixels</div>
+        </div>
+
+    <p>Let's put our new flexbox knowledge to the test and add some real layout changes to our index!</p>
+
+    
+
+    
+
+
+
+    <div class="centered">
+        <a href="day008.html">Day 8</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day010.html">Day 10</a>
+    </div>
+</body>
+</html>
