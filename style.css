@@ -48,13 +48,14 @@ h1 {
 
 .index-item {
     width: 350px;
-    height: 200px;
+    height: auto;
     padding: 8px;
     border: 4px solid paleturquoise;
     display: flex;
     border-radius: 25%;
     background: transparent;
     border-style: dotted;
+    align-items: center;
 }
 
 .flexlist {
