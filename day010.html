@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Day 10</title>
+    <style>
+        .special {
+            color: rgb(38, 127, 216);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+ <h1>Flexbox Continued</h1><hr>
+ <h3>Monday June 20th, 2022<br>Day ten</h3>
+
+ <h2>The Two Axes of Flexbox</h2>
+ <p><strong>Axis One, The Main Axis</strong><br>
+    Is defined by the <span class="special-text">flex-direction</span>, of which the four possible vaules are
+    <ul>
+        <em><span class="special-text">
+            <li>row</li>
+            <li>row-reverese</li>
+            <li>column</li>
+            <li>column-reverse</li></span></em>
+    </ul>
+    Row and Row Reverse will set the main axis along a vertical row from left to right, or right to left, in the <em>inline direction</em>.<br>
+    Column and Column Reverse will set the main axis along a horizontal row from top to bottom, or bottom to top, in the <em>block direction</em>.</p>
+
+    <p><strong>Axis Two, The Cross Axis</strong><br>
+        Is determined by the main axis, it is the columns/rows that run left-right or top-bottom (and reverse).</p>
+
+    <h2>Start and End Lines</h2>
+    <p>The start and end lines refer to where the box begins and ends. If using the row-reverse, the start would be on right hand side of the page and end on the left, reverse of what row would be.</p>
+
+    <h2>Flex Container</h2>
+    <p>As we've worked with already, Flex Containers are used to contain their content by setting a value using the container's <span class="special-text">display</span> property to <span class="special-text">flex</span> or <span class="special-text">inline-flex</span>.
+    <br>When that is set, the contents (or children) of the container become <em>flex items</em>. They will behave in certain ways</p>
+    <ul>
+        <li>The items will display in a row if <span class="special-text">flex-direction</span> is set to/defaulted to row</li>
+        <li>The items will start from the beginning of the main axis</li>
+        <li>The items will not stretch to fill the size of the cross axis</li>
+        <li>The <span class="special-text">flex-basis</span> property is set to auto</li>
+        <li>The <span class="special-text">flex-wrap</span> property is set to nowrap</li>
+    </ul>
+
+    <h2>Multi-line Flex Containers with Flex-Wrap</h2>
+    <p>To cause items to wrap, use the <span class="special-text">flex-wrap: wrap;</span> property and value. This way, if the items are too large to display in one line, they will wrap onto another one. With a value of <em>nowrap</em>, they will instead shrink to fit the container (this can also cause an overflow if the items can't fit/shrink small enough)</p>
+
+    <h2>Flex-flow Shorthand and Values for Flex Propters</h2>
+    <p>In order to control flex items, target them directly by using three properties: <span class="special-text">flex-grow</span>, <span class="special-text">flex-shrink</span>, and <span class="special-text">flex-basis</span>. We already went through these in Day 8, Growing and Shrinking.
+    <br><strong>Predefined Shorthand Values:</strong>
+    <br><span class="special-text">flex: initial;</span> resets the item to the initial values of Flexbox, items will not grow but they will shrink if necessary. It is the same as <span class="special">flex: 0 1 auto;</span> 
+    <br><span class="special-text">flex: auto;</span> works similarly to <em>initial</em> but will also allow items to grow to fit its container. It is the same as <span class="special">flex: 1 1 auto;</span>
+    <br><span class="special-text">flex: none;</span> causes items to not change at all. It is the same as <span class="special">flex: 0 0 auto;</span>
+    <br><span class="special-text">flex: [positive-numer];</span> often appears as <span class="special">flex: 1;</span> or <span class="special">flex: 2;</span> and so on ...This will set both <em>grow</em> and <em>shrink</em> to the same value with the <em>flex-basis</em> being 0. It is the same as <span class="special">flex: 1 1 0;</span> or <span class="special">flex: 2 2 0;</span></p>
+
+    <h2>Alignment, Jusitification and Distribution (of Free Space between Items)</h2>
+    <p>Flexbox has the ability to align and justify items on the main-axis and cross-axis using the <span class="special-text">align-items</span> property. This must be done within the container, not the items.
+    <br><br><span class="special-text"><strong>align-items:</strong></span>
+    <ul>
+        <li><span class="special-text">stretch;</span> aligns(or stretches) items to the height of the tallest container</li>
+        <li><span class="special-text">flex-start;</span> align items to the start of the flex container</li>
+        <li><span class="special-text">flex-end;</span> aligns items to the end of the flex container</li>
+        <li><span class="special-text">center;</span> align items to the center of the flex container</li>
+    </ul>
+        We can also use the <span class="special-text">justify-content</span> property to align items on the main-axis
+    <br><br><span class="special-text">justify-content:</span></p>
+    <ul>
+        <li><span class="special-text">flex-start; flex-end; center;</span> to line up at the start, end or center of the container</li>
+        <li><span class="special-text">space-around;</span> to space the items apart equally from each other and from the edges of the container</li>
+        <li><span class="special-text">space-between;</span> to space the items apart to fill up the container with the first item at the edge of the start of the container and the last item at the edge of the end</li>
+        <li><span class="special-text">space-evenly;</span> to space items evenly on either end to their full size</li>
+    </ul>
+
+    
+    
+    <div class="centered">
+        <a href="day009.html">Day 9</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day011.html">Day 11</a>
+    </div>
+</body>
+</html>
