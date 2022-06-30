@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <title>Day 11</title>
+</head>
+<body>
+    <h1>Foundations of JavaScript</h1>
+    <hr>
+    <h3>Tuesday June 28th + 30th, 2022<br>Day Eleven</h3>
+
+    <p><strong>Small Update:</strong> 
+    <br><span class="small">We are a little bit past Day11, I spent a couple of days working on the <a href="https://smexch.github.io/landing-page/">Landing Page</a> project and it turned out quite well. I will probably customize it further or create something new using the template. 
+        <br>Anyway, onto JavaScript!</span></p>
+
+    <h2>How to Run JavaScript Code</h2>
+    <p>The simplest way to run JavaScript is within the browser, we'll simple create an HTML file with the JavaScript code inside of it. Just add <span class="special-text">[style]</span> tags within the head of the code, within write <span class="special-text">[console.log("Hello, World!")]</span>
+    <br> Anything placed within the ( ) will print to the developer console in the browser.</p>
+    <p>To include JavaScript within an external script, it is similar to linking external CSS (as I have been doing thus far). Add <span class="special-text"> [script src="javascropt.js"]  [/script] </span>. The .js extension works like .css for stylesheets</p> 
+
+    <h2>Variables</h2>
+    <p>A variable is a "named storage" that is used to store all kinds of data/information. To create a variable in JavaScript, use the keyword <span class="special-text">let</span>.
+    <br> An example of how <span class="special-text">let</span> works: 
+    <br>1 <span class="special-text">let</span> message;  <em>(creats/declares a variable with the name "message")</em>
+    <br>2 message = "Hello"; <em>(store the string "Hello" in the variable named "message". It is the data/info)</em>
+    <br>3 alert(message); <em>(shows the variable content)</em>
+    <br>(Line 1 and 2 can be combined as <em>let message = 'Hello';</em>)
+    </p>
+    <p>Declaring multiple variables in one line would look like this:
+        <br> 1 let user = 'John', age = 25, message = 'Hello';</p>
+    <p>Though  not recommended, for better readability they should be given their own lines like this:
+        <br>1 <span class="special-text">let</span> user ='John';
+        <br>2 <span class="special-text">let</span> age = 25;
+        <br>3 <span class="special-text">let</span> message = 'Hello';
+    <br> Or more simply:
+        <br>1 <span class="special-text">let</span> user = 'John';
+        <br>2   age = 25;
+        <br>3   message = 'Hello';</p>
+
+    <p>An easy way to think about <strong>variables</strong> is a way of organization. In the previous exmaple of message, think of a box labelled "message" (the <strong> variable</strong>) and within the box we put "Hello" (the <strong>value</strong>).
+    <br> A variable should only be declared once (using <span class="special-text">let</span>) and from then on, it should only be used without being declared.</p>
+        
+<h2>Variable Naming</h2>
+<p><strong>2 Rules of naming:</strong>
+    <br> The name must contain only letters, digits or the $ and _ symbols.
+    <br>The first character must not be a digit</p>
+<p>When naming a Variable with more than one word, capitalize the beginning of each word (except for the first) like so: thisWordyVariableName
+    <br>Variables are cast sensitive, you can also use any language/alphabet/hieroglyphs/cyrillic letters.
+    <br>Some words are reserved and cannot be used as variable names, such as <em>'let', 'class', 'return', 'function'.</em>
+</p>
+
+<p><strong>Constants</strong>        
+    <br>To make a variable unchangable, declare it a constant using <span class="special-text">const</span> instead of <span class="special-text">let</span>.
+    <br>These variables cannot be reassigned. This communicates clearly that the value will never change (example, a birthday is always the same date)
+    <br>Constants (which are generally done in uppercase to stand out for a decided value) are useful to simplify a value that is difficult to remember, like with colors. Example:
+    <br><span class="special-text">const</span> COLOR_ORANGE = "#FF7F00";
+    <br>COLOR_ORANGE is much easier to remember than the hexidecimal format and harder to misstype, especially if you'll be cycling through many different colors.
+</p>
+    <p> When values are constant but are calculated in run-time, but don't change after the initial assignment, we do not use all uppercase. Example:
+    <br><span class="special-text">const</span> pageLoadTime =
+    <br> Simply put, capital named constants are only used as aliases for "hard-coded" values.
+</p>    
+
+<p><strong>Naming Summed up</strong>
+    <ul>
+        <li>Names should be clean and clear for what is stored inside. It should be easy for another coder to see and understand easily.</li>
+    <li>They should be easily readable like userName, shoppingCart</li>
+    <li>Avoid abbreviations </li>
+    <li> Create new variables for new things as opposed to always reusing the old ones. This will help in situations where debugging is required and is just more organized.</li>
+    </ul>
+</p>
+        
+<div class="footer">
+    <a href="day010.html">Day 10</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day012.html">Day 12</a>
+</div>
+</body>
+</html>
