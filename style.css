@@ -70,6 +70,25 @@ h1 {
     align-items: center;
 }
 
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 25px;
+    border: 2px solid paleturquoise;
+}
+
+.grid-item {
+    background-color: lightgoldenrodyellow;
+    border: 2px solid paleturquoise;
+    padding: 5px 10px;
+    text-align: left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 a:hover {
     border-radius: 1em;
     color: black;

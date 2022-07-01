@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Day 12</title>
+</head>
+<body>
+    <h1>Foundations of JavaScript Continued</h1>
+    <hr>
+    <h3>Thursday June 30th, 2022<br>Day Twelve</h3>
+
+    <h2>Numbers</h2>
+    <p><strong>JavaScript Arithmetic Operators:</strong></p>
+        <br>
+        <div class="grid-container">
+            <div class="grid-item">Operator</div>
+            <div class="grid-item">Description</div>
+            <div class="grid-item">+</div>
+            <div class="grid-item">Addition </div>
+            <div class="grid-item">-</div>
+            <div class="grid-item">Subtraction</div>
+            <div class="grid-item">*</div>
+            <div class="grid-item">Multiplication</div>
+            <div class="grid-item">**</div>
+            <div class="grid-item">Exponentiation</div>
+            <div class="grid-item">/</div>
+            <div class="grid-item">Division</div>
+            <div class="grid-item">%</div>
+            <div class="grid-item">Modulus (Remainder)</div>
+            <div class="grid-item">++</div>
+            <div class="grid-item">Increment</div>
+            <div class="grid-item">--</div>
+            <div class="grid-item">Decrement</div>
+            </div>
+
+    <p>An example using an arithmetic operation with two literal numbers:
+        <br><span class="special-text">let</span> x = 100 + 50;
+        <br>Or with variables:
+        <br><span class="special-text">let</span> = a + b;
+        <br>Or with expressions:
+        <br><span class="special-text">let</span> = (100 + 50) * a;
+        <br>As established, the Operators are the symbols that tell the numbers what to do, the numbers are called <strong>Operands</strong>. 
+        Example: 100( the perand) + (the operator) a (the operand)   
+        <br>On a side note in JavaScipt, in addition to 'addition', the + operator is also used as a concatenation when the operands are in quotations, these are called a <strong>string</strong>. Example: 
+        <br><span class="special-text">let</span> x = "10";
+        <br><span class="special-text">let</span> y = "20";
+        <br><span class="special-text">let</span> z = x + y;
+        <br> The result would be z = 1020. This will be the result even if one of the numbers is surrounded by quotations.
+    </p>
+
+    <p> JavaScript interprets numbers from left to right, so in this example, + is an addition and a concatenation:
+        <br><span class="special-text">let</span> x = 10;
+        <br><span class="special-text">let</span> y = 20; 
+        <br><span class="special-text">let</span> z = "30";
+        <br> let result would = 3030. JavaScript would first read 10 + 20 to = 30, it would be 30 + "30" (a concatenation), resulting in 3030.
+        <br> In Summary, <span class="special-text">let</span> x = 100; is a number, <span class="special-text">let</span> x = "100"; is a string. This is only important when using +. Numbers in quotations will work with every other operator normally. "100" / "10" will be 10.
+    </p>
+    <p>Lastly, in order of operations, JavaScript also uses BEDMAS as learned in school. Brackets, Exponents, Division (or) Multiplication, Addition (or) Subtraction.</p>
+
+
+    <center><h2>Types of Numbers</h2></center>
+    <div class="grid-container">
+        <div class="grid-item">Integers</div>
+        <div class="grid-item">Floating-point numbers without a fraction, positive or negative</div>
+        <div class="grid-item">Floats (Floating Point Numbers</div>
+        <div class="grid-item">Have a decimal point or decimal places</div>
+        <div class="grid-item">Doubles</div>
+        <div class="grid-item">A specific type of Floating point number that have greater precision than standing FPN, they are accurate to a greater number of decimal places</div>
+    </div>
+    <center><h2>Types of Number Systems</h2></center>
+    <div class="grid-container">
+        <div class="grid-item">Binary</div>
+        <div class="grid-item">The lowest level language of computers, all 0s and 1s</div>
+        <div class="grid-item">Octal</div>
+        <div class="grid-item">Base 8, uses 0-7 in each column</div>
+        <div class="grid-item">Hexadecimal</div>
+        <div class="grid-item">Base 16, uses 0-9 and then a-f in each column (like the numbers for colors in CSS)</div>
+    </div>
+
+
+    <div class="footer">
+        <a href="day011.html">Day 11</a>  |  <a href="index.html">Return to Index</a>  |  <a href="day013.html">Day 13</a>
+    </div>   
+</body>
+</html>
