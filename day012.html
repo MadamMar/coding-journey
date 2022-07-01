@@ -14,25 +14,43 @@
     <h2>Numbers</h2>
     <p><strong>JavaScript Arithmetic Operators:</strong></p>
         <br>
-        <div class="grid-container">
+        <div class="four">
             <div class="grid-item">Operator</div>
             <div class="grid-item">Description</div>
+            <div class="grid-item">Purpose</div>
+            <div class="grid-item">Example</div>
             <div class="grid-item">+</div>
             <div class="grid-item">Addition </div>
+            <div class="grid-item">Adds two numbers together</div>
+            <div class="grid-item">5 + 5</div>
             <div class="grid-item">-</div>
             <div class="grid-item">Subtraction</div>
+            <div class="grid-item">Subtracts two numbers from the left</div>
+            <div class="grid-item">10 - 5</div>
             <div class="grid-item">*</div>
             <div class="grid-item">Multiplication</div>
-            <div class="grid-item">**</div>
-            <div class="grid-item">Exponentiation</div>
+            <div class="grid-item">Multiples two numbers together</div>
+            <div class="grid-item">5 * 5</div>
             <div class="grid-item">/</div>
             <div class="grid-item">Division</div>
+            <div class="grid-item">Divides the left number by the right</div>
+            <div class="grid-item">10 / 5</div>
+            <div class="grid-item">**</div>
+            <div class="grid-item">Exponent or Exponentiation</div>
+            <div class="grid-item">Raise a base number to the exponent power. Base number mutiplied by itself, exponent times</div>
+            <div class="grid-item">5 ** 2 <br>(same as 5 * 5)</div>
             <div class="grid-item">%</div>
             <div class="grid-item">Modulus (Remainder)</div>
+            <div class="grid-item">Returns the remainder left over after diividing the left number into a number of integer portions equal to the right number</div>
+            <div class="grid-item">11 % 5<br> (would return 1 because 5 goes into 11 twice, leaving 1 leftover)</div>
             <div class="grid-item">++</div>
             <div class="grid-item">Increment</div>
+            <div class="grid-item">Increases the value by 1</div>
+            <div class="grid-item">5++<br>6</div>
             <div class="grid-item">--</div>
             <div class="grid-item">Decrement</div>
+            <div class="grid-item">Drecreases the value by 1</div>
+            <div class="grid-item">5--<br>4</div>
             </div>
 
     <p>An example using an arithmetic operation with two literal numbers:
@@ -78,6 +96,19 @@
         <div class="grid-item">Hexadecimal</div>
         <div class="grid-item">Base 16, uses 0-9 and then a-f in each column (like the numbers for colors in CSS)</div>
     </div>
+
+    <h2>Helpful Operators/Methods</h2>
+    <p><code>typeof</code> will show what datatype a variable contains. Exampe:
+    <br><code>console.log(typeof 42);<br>console.log(typeof '42')
+        <br>>"number"<br>>"string"</code></p>
+    <p><code>toFixed()</code> method will round a number to a fixed number of decimal places. Example:
+    <br><code>const manyDecimals = 5.3234546;<br>manyDecimals;
+        <br>const twoDecimalsOnly = manyDecimals.toFixed(2);<br>twoDecimalsOnly;
+    </code></p>
+    <p><code>Number()</code> can be used to change something like a string (a number within quotations) into a number. Example:
+    <br><code>let myNumber="5";<br>myNumber = Number(myNumber) + 5;</code>
+    <br> the result will be <code>>10</code>, not <code>55</code>.</p>
+
 
 
     <div class="footer">

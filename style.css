@@ -70,13 +70,18 @@ h1 {
     align-items: center;
 }
 
-.grid-container {
+.grid-container,
+.four {
     display: inline-grid;
     grid-template-columns: auto auto;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 25px;
     border: 2px solid paleturquoise;
+}
+
+.four {
+    grid-template-columns: auto auto auto auto;
 }
 
 .grid-item {
