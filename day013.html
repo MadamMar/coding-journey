@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Day 13</title>
+</head>
+<body></body>
+    <h1>Foundations of JavaScript Continues</h1>
+    <hr>
+    <h3>Friday July 6th, 2020<br>Day Thirteen</h3>
+
+    <h2>Increment and Decrement Operators</h2>
+    <p>To easily add a numeric value by just 1, we use the increment operator (++). To subtract by just 1, we use the decrement operator (--). Example:
+        <br><code>let num1 = 4; <br>>4<br> num1++;<br>>5</code></p>
+
+    <h2>Assigned Operators</h2>
+    <p>The basics are simple and what we've already been through (let x = 3; sets x value to 3, let y = 4; sets y value to 4. x = y would now make x value 4, etc)
+        <br>There are also options that are a bit more complex for assigning values. These are some of the more common ones:</p>
+
+    <div class="five">
+        <div class="grid-item">Operator</div>
+        <div class="grid-item">Assignment</div>
+        <div class="grid-item">Purpose</div>
+        <div class="grid-item">Example</div>
+        <div class="grid-item">Shortcut for</div>
+        <div class="grid-item">+=</div>
+        <div class="grid-item">Addition</div>
+        <div class="grid-item">Adds the right value to the left value, creating a new variable value</div>
+        <div class="grid-item">x += 5;</div>
+        <div class="grid-item">x = x + 5;</div>
+        <div class="grid-item">-=</div>
+        <div class="grid-item">Subtraction</div>
+        <div class="grid-item">Subtracts the right value from the left value, creating a new variable value</div>
+        <div class="grid-item">x -= 5;</div>
+        <div class="grid-item">x =  x - 5;</div>
+        <div class="grid-item">*=</div>
+        <div class="grid-item">Multiplication</div>
+        <div class="grid-item">Multiples the left value by the right value, creating a new variable value</div>
+        <div class="grid-item">x *= 5;</div>
+        <div class="grid-item">x = x * 5;</div>
+        <div class="grid-item">/=</div>
+        <div class="grid-item">Division</div>
+        <div class="grid-item">Divides the left value by the right value, creating a new variable value</div>
+        <div class="grid-item">x /= 5;</div>
+        <div class="grid-item">x = x / 5;</div>
+    </div>
+    <p>Example: 
+        <br><code>let x = 3;
+            <br> let y = 4;
+                <br> x *= y;</code>
+    <br> X would then become 12 (x = x * y; or x = 3 * 4;)
+    </p>
+
+    <h2>Sizing a Canvas Box</h2> 
+    <p>We'll be using Canvas API but focusing on the math portion of how it works. To make a box, you'll use the variable x (for width) and y (for height), these values are in pixels. Let's make a box of 50px height and width.
+        <br> Example code for a Canvas box:</p>
+    <p><code>let x = 50;<br> let y = 50; <br> x = 50; <br> y = 50; <br> ctx.fillStyle = 'green'; <br> ctx.fillRect(10, 10, x, y);</code></p>
+
+    <h2>Comparison Operators</h2> 
+    <div class="four">
+        <div class="grid-item">Operator</div>
+        <div class="grid-item">Name</div>
+        <div class="grid-item">Purpose</div>
+        <div class="grid-item">Example</div>
+        <div class="grid-item">===</div>
+        <div class="grid-item">Strict Equality</div>
+        <div class="grid-item">Tests whether the left and right values are identical to one another</div>
+        <div class="grid-item">5 === 2 + 4</div>
+        <div class="grid-item">!==</div>
+        <div class="grid-item">Strict-non-equality</div>
+        <div class="grid-item">Tests whether the left and right values are not identical to one another</div>
+        <div class="grid-item">5 !== 2+3</div>
+        <div class="grid-item"> < </div>
+        <div class="grid-item">Less than</div>
+        <div class="grid-item">Tests whether the left value is smaller than the right one</div>
+        <div class="grid-item">10 < 6</div>
+        <div class="grid-item">></div>
+        <div class="grid-item">Greater than</div>
+        <div class="grid-item">Tests whether the left value is greater than the right one</div>
+        <div class="grid-item">10 > 20</div>
+        <div class="grid-item"><=</div>
+        <div class="grid-item">Less than or Equal to</div>
+        <div class="grid-item">Tests whether the left value is smaller than or equal to the right one</div>
+        <div class="grid-item">3 <= 2</div>
+        <div class="grid-item">>= </div>
+        <div class="grid-item">Greater than or Equal to</div>
+        <div class="grid-item">Tests whether the left value is greater than the right one</div>
+        <div class="grid-item">5 >= 4</div>
+    </div>
+
+<p>These values will return true/false when entered into the console. These <em>'booleans'</em> can be used for numerous things, such as:</p>
+<ul style="list-style: none;">
+    <li>displaying whether a feature is on or off on it's text label</li>
+    <li>displaying a victory and game over message when a game is complete</li>
+    <li>displaying a proper seasonal message depending on what holiday it is</li>
+    <li>displaying the proper amount of zoo on a map depending on what is selected</li>
+</ul>
+
+    <div class="footer">
+        <a href="day012.html">Day 12</a> | <a href="index.html">Index</a> | <a href="day014.html">Day 14</a>
+    </div>
+</body>
+</html>

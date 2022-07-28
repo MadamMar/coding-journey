@@ -71,17 +71,23 @@ h1 {
 }
 
 .grid-container,
-.four {
+.four,
+.five {
     display: inline-grid;
     grid-template-columns: auto auto;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 25px;
     border: 2px solid paleturquoise;
+    font-size: 12px;
 }
 
 .four {
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, auto);
+}
+
+.five {
+    grid-template-columns: repeat(5, auto);
 }
 
 .grid-item {
